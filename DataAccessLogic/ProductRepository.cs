@@ -39,6 +39,7 @@ namespace Simple_Inventory_System.DataAccessLogic
         //and if the list is empty or the category not found the function will throw an exception to be handled
         public IEnumerable<Product> GetByCategory(string category_Name)
         {
+            //Using LINQ to list products by category.
             IEnumerable<Product> FilteredResults=Products.Values.Where(x=>x.Category.Equals(category_Name,StringComparison.OrdinalIgnoreCase));
 
             if (FilteredResults.Any())

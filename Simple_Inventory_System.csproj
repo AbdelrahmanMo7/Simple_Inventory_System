@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\InventoryManagement.cs" />
     <Compile Include="DataAccessLogic\ProductRepository.cs" />
+    <Compile Include="Interfaces\IInventoryManagement.cs" />
     <Compile Include="Interfaces\IProductRepository.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Program.cs" />
