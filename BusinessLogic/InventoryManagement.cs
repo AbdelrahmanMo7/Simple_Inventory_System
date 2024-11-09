@@ -16,7 +16,7 @@ namespace Simple_Inventory_System.BusinessLogic
             this.productRepository = _productRepository;
         }
 
-
+        // adding new product to inventory
         public void AddNewProduct(Product product)
         {
             try
@@ -29,6 +29,7 @@ namespace Simple_Inventory_System.BusinessLogic
             }
         }
 
+        // updating product Stock Quantity
         public void UpdateStockQuantity(string product_name, int NewQuantity)
         {
             try
@@ -43,6 +44,8 @@ namespace Simple_Inventory_System.BusinessLogic
                 Console.WriteLine(ex.Message);
             }
         }
+
+        // display all products in a particular category.
         public void DisplayProducts_ByCategory(string category_name)
         {
             try
@@ -62,6 +65,7 @@ namespace Simple_Inventory_System.BusinessLogic
            
         }
 
+        //Calculate and display the total inventory value (sum of the Price *StockQuantity for all products).
         public void DisplayTotalInventory()
         {
             try
